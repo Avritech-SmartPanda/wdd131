@@ -14,7 +14,6 @@
  header {
      background-color: #0f172a;
      color: #ffffff;
-     padding: 1em;
  }
 
  nav {
@@ -70,4 +69,12 @@
 
  .bg-white {
      background-color: #ffffff;
+ }
+
+ .bg-blue {
+     background-color: #0f172a;
+ }
+
+ .p-2 {
+     padding: 1.2em;
  }
