@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #0f172a;
+    color: #ffffff;
+
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+header nav ul {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: #f5f5f5;
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #0f172a;
+    text-align: center;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 300;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.gap-1 {
+    gap: 1em;
+}
+
+.gap-2 {
+    gap: 2em;
+}
+
+.list-none {
+    list-style: none;
+}
+
+.list-none a {
+    text-decoration: none;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.bg-blue {
+    background-color: #0644a1;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mx-1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-1 {
+    padding: 0.6em;
+}
+
+.p-2 {
+    padding: 1.2em;
+}
+
+.p-3 {
+    padding: 3em;
+}
+
+.pt-3 {
+    padding-top: 3em;
+}
+
+.px-3 {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+.py-2 {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+
+.p-12 {
+    padding: 2.4em;
+}
+
+nav a:hover {
+    color: #0f172a;
+}
+
+.active {
+    color: #0f172a;
+}
+
+h1 {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 400;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    gap: 1em;
+}
+
+.card-header {
+    background-color: #0f172a;
+}
+
+.rounded-top {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+.rounded {
+    border-radius: 0.5em;
+}
+
+.divider {
+    border-bottom: 1px solid #ccc;
+    width: 75%;
+}
+
+.centered-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-sm {
+    font-size: 0.8em;
+}
+
+.h-full {
+    height: 100%;
+}
