@@ -15,7 +15,6 @@ body {
 header {
     background-color: #0f172a;
     color: #ffffff;
-
 }
 
 nav {
@@ -202,4 +201,8 @@ h2 {
 
 .h-full {
     height: 100%;
+}
+
+.last-modified{
+    color: #fa9d1e;
 }
