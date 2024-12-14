@@ -1,8 +1,3 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-}
-
 
 main {
     display: flex;
@@ -18,6 +13,8 @@ section {
 
 h2 {
     color: #0f172a;
+    font-family: "Signika Negative", sans-serif;
+    
 }
 
 footer {
@@ -62,4 +59,5 @@ footer {
 
 
 img { width: 100%; height: auto; margin: .5rem;}
+figcaption { font-size: .75rem; text-align: center; color: #0f172a;  }
 
