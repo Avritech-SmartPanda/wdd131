@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture Album</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="p-2">Picture Album</h1>
+        <nav class="px-3 py-2 bg-blue navigation">
+            <ul class="flex flex-row gap-2 list-none">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">Old</a></li>
+                <li><a href="#" class="text-white">New</a></li>
+                <li><a href="#" class="text-white">Large</a></li>
+                <li><a href="#" class="text-white">Small</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu"></button>
+    </header>
+
+    <main class="p-12 gap-2">
+        <h2>Home</h2>
+
+        <section>
+
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/albuquerque-new-mexico/320x200/albuquerque-temple-lds-998219-wallpaper.jpg"
+                    alt="Temple Image">
+                <figcaption>Albuquerque Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/apia-samoa/320x200/apia-samoa-temple-lds-460475-wallpaper.jpg"
+                    alt="Temple Image">
+                <figcaption>Apia Samao Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/asuncion-paraguay/320x200/1-68dfd881f93cb86e99828aa547eac056189c55ff.jpeg"
+                    alt="Temple Image">
+                <figcaption>Asuncion Paraguay Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bountiful-utah/320x200/bountiful-temple-766347-wallpaper.jpg"
+                    alt="Temple Image">
+                <figcaption>Bountiful Utah Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/barranquilla-colombia/320x200/2-Barranquilla-Columblia-Temple-2135201.jpg"
+                    alt="Temple Image">
+                <figcaption>Barranquilla Colombia Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/belem-brazil/320x200/belem_brazil_temple_exterior2.jpg"
+                    alt="Temple Image">
+                <figcaption>Belem Brazil Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/bern-switzerland/320x200/bern-switzerland-temple-lds-784288-wallpaper.jpg"
+                    alt="Temple Image">
+                <figcaption>Bern Swirtzerland Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/billings-montana/320x200/02-Billings-Montana-Temple-1572044.jpg"
+                    alt="Temple Image">
+                <figcaption>Billings Montana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/boise-idaho/2018/320x200/1-Boise-Idaho-Temple-1968984.jpg"
+                    alt="Temple Image">
+                <figcaption>Boise Idaho Temple</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="text-white p-2">
+        <p>&copy;<span id="currentyear"></span> 🌸 Daphne Avril 🌸 Johannesburg South Africa</p>
+        <i class="last-modified">Last Modification: <span id="lastModified"></span></i>
+    </footer>
+</body>
+
+</html>
