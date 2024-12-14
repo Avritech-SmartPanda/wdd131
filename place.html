@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angkor Wat Cambodia</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Daphne Avril.">
+    <meta name="author" content="Daphne Avril Museuka">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Angkor Wat Cambodia</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Angkor Wat Temple">
+            </picture>
+        </section>
+
+        <section class="data">
+            <div class="data-banner">
+                <h2 >Data</h2>
+            </div>            
+            <p><strong>Address:</strong> Krong Siem Reap, Cambodia</p>
+            <p><strong>Land area:</strong> 163 ha</p>
+            <p><strong>Builder:</strong> Suryavarman II</p>
+            <p><strong>Founded:</strong> 1150</p>
+            <p><strong>Coordinates:</strong> 13°24′45″N 103°52′0″E﻿ / ﻿13.41250°N 103.86667°E</p>
+            <p><strong>Architectural styles:</strong> Khmer</p>            
+        </section>
+
+        <section class="weather">
+            <div class="weather-banner">
+                 <h2>Weather</h2>
+                <img src="images/weather_icon.svg" alt="Weather Icon" width="80">             
+            </div>           
+            <p><strong>Temperature:</strong> <span id="temperature">--</span></p>
+            <p><strong>Conditions:</strong> <span id="conditions">--</span></p>
+            <p><strong>Wind:</strong> <span id="wind">--</span></p>        
+          </section>
+    </main>
+
+    <footer class="p-2">
+        <p>&copy;<span id="currentyear"></span> 🌸 Daphne Avril 🌸 Johannesburg South Africa</p>
+        <i class="last-modified">Last Modification: <span id="lastModified"></span></i>
+    </footer>
+</body>
+
+</html>

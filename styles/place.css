@@ -1,0 +1,135 @@
+:root {
+    --blue: #032d9d;
+    --red: #da0023;
+    --white: #fff;
+}
+
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background: var(--blue);
+    color: var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.data, .weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    background: var(--white);
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.weather h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.last-modified {
+    color: var(--white);
+}
+
+@media screen and (min-width: 500px) {
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 75%;
+        max-width: 75%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+    .data, .weather {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        background: rgb(255 255 255 / 60%);
+        border: 1px solid #ccc;
+        padding: 1rem;
+        position: absolute;
+        width: 22vw;
+        min-height: 260px;
+    }
+   
+    .data p:nth-child(2),.weather p:nth-child(2) {
+        margin-top: 80px;
+    }
+     
+    .data-banner, .weather-banner {
+        position: relative;
+    }
+
+    .data-banner, .weather-banner {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #fff;
+        background-color: var(--red);
+        padding: .5rem;
+        height: 58px;
+        width: 98%;
+        position: absolute;
+        left: -8px;
+    }
+
+    .weather-banner h2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .data {
+        top: 100px;
+        left: 20px;
+    }
+
+    .weather {
+        bottom: 100px;
+        right: 20px;
+    }
+
+    .weather-banner img{
+        display: none;
+    }
+    .weather-banner::after {
+        content: url('/images/sunny_icon.svg');
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: middle;
+        width: 80px;
+        height: 80px;
+        position: relative;
+        top: 10px;
+    }
+    
+
+}
