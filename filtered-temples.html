@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Daphne Avril.">
+    <meta name="author" content="Daphne Avril Museuka">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+
+
+<body>
+    <header>
+        <h1 class="p-2">Temple Album</h1>
+        <nav class="px-3 py-2 bg-blue navigation">
+            <!-- <ul class="flex flex-row gap-2 list-none">
+                <li><a href="#" class="text-white">Home</a></li>
+                <li><a href="#" class="text-white">Old</a></li>
+                <li><a href="#" class="text-white">New</a></li>
+                <li><a href="#" class="text-white">Large</a></li>
+                <li><a href="#" class="text-white">Small</a></li>
+            </ul> -->
+            <ul class="flex flex-row gap-2 list-none">
+                <li><a href="#" class="text-white" onclick="filterTemples('Home')">Home</a></li>
+                <li><a href="#" class="text-white" onclick="filterTemples('Old')">Old</a></li>
+                <li><a href="#" class="text-white" onclick="filterTemples('New')">New</a></li>
+                <li><a href="#" class="text-white" onclick="filterTemples('Large')">Large</a></li>
+                <li><a href="#" class="text-white" onclick="filterTemples('Small')">Small</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu"></button>
+    </header>
+
+    <main class="p-12 gap-2">
+        <h2>Temples</h2>
+        <section id="temple-cards-container"></section>
+    </main>
+
+    <footer class="text-white p-2">
+        <p>&copy;<span id="currentyear"></span> 🌸 Daphne Avril 🌸 Johannesburg South Africa</p>
+        <i class="last-modified">Last Modification: <span id="lastModified"></span></i>
+    </footer>
+</body>
+
+</html>
