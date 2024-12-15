@@ -26,6 +26,12 @@ h1, h2 {
     width: 100%;
 }
 
+#wireframe img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 
 .grid-cols-4 {
     display: grid;
