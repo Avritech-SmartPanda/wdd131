@@ -4,13 +4,24 @@ main {
     gap: 1rem;
 }
 
-section {
-    margin: 20px;
+section { 
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #ffffff; 
+    background: #ffffff;
 }
+
 h1, h2 {
-    color: #0f172a; 
+    color: #0f172a;
+}
+
+#wireframe {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+#wireframe div{
+ width: 100%;
 }
