@@ -64,7 +64,13 @@ footer {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease, box-shadow 0.3s ease;  
 }
-figcaption { font-size: .75rem; text-align: center; color: #0f172a;  }
+
+.label {
+    text-transform: uppercase;  
+    font-size: .75rem;
+     color: #0f172a;    
+}
+ 
 
 @media screen and (min-width: 500px) {
 	#menu {

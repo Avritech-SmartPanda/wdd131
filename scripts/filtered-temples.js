@@ -103,13 +103,13 @@ function createTempleCard(temple) {
 	name.textContent = temple.templeName;
 
 	const location = document.createElement('p');
-	location.textContent = `Location: ${temple.location}`;
-
+	location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+	
 	const dedicated = document.createElement('p');
-	dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+	dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
 
 	const area = document.createElement('p');
-	area.textContent = `Size: ${temple.area} sq. ft.`;
+	area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq. ft.`;
 
 	card.appendChild(img);
 	card.appendChild(name);
