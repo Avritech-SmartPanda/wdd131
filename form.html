@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Daphne Avril.">
+    <meta name="author" content="Daphne Avril Museruka">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/form.css" />
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="p-2">Product Review</h1>
+    </header>
+
+    <main class="p-12 gap-2">
+        <form method="get" action="review.html">
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Choose a Product ...</option>
+            </select>
+
+
+            <div class="form-group">
+                <label for="rating">Overall Rating</label>
+                <div class="rating">
+                    <div class="radio">
+                        <label for="star1">&#9734;</label>
+                        <input type="radio" id="star1" name="rating" value="1" required>                        
+                    </div>
+
+                    <div class="radio"> 
+                        <label for="star2">&#9734;&#9734;</label>
+                        <input type="radio" id="star2" name="rating" value="2">                        
+                    </div>
+
+                    <div class="radio">
+                        <label for="star3">&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star3" name="rating" value="3">                      
+                    </div>
+
+                    <div class="radio">
+                        <label for="star4">&#9734;&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star4" name="rating" value="4">                        
+                    </div>
+
+                    <div class="radio">
+                        <label for="star5">&#9734;&#9734;&#9734;&#9734;&#9734;</label>
+                        <input type="radio" id="star5" name="rating" value="5">                        
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="features">Which features did you find useful in the product? (Check all that apply)</label>
+                <div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="durability" name="features" value="Durability">
+                        <label for="durability">Durability</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                        <label for="ease-of-use">Ease of Use</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="performance" name="features" value="Performance">
+                        <label for="performance">Performance</label><br>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="design" name="features" value="Design">
+                        <label for="design">Design</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="written-review">Written Review  <span class="optional">(Optional)</span></label>
+                <textarea id="written-review" name="written-review" rows="4"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="username">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="username" name="username">
+            </div>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+
+    <footer class="text-white p-2">
+        <p>&copy;<span id="currentyear"></span> 🌸 Daphne Avril 🌸 Johannesburg South Africa</p>
+        <i class="last-modified">Last Modification: <span id="lastModified"></span></i>
+    </footer>
+</body>
+
+</html>
