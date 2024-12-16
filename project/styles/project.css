@@ -113,8 +113,8 @@
  }
 
  .details-btn {
-     color: var(--cyan);
-     border: 1px solid var(--cyan);
+     color: var(--dark-cyan);
+     border: 1px solid var(--dark-cyan);
  }
 
  .shop-btn {
