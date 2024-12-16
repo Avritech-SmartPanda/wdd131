@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Handmade Jewelry</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Daphne Avril.">
+    <title>About Us | Handmade Jewelry</title>
+    <meta name="description" content="Discover the story behind our handmade jewelry and the passion that drives us to create unique pieces.">
     <meta name="author" content="Daphne Avril">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="styles/project.css">
     <script src="../scripts/getdates.js" defer></script>
-    <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
@@ -30,88 +29,54 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <button type="button" id="menu"></button>
     </header>
 
     <main class="p-12 gap-2">
         <section class="hero">
             <div class="hero-section text-center">
-                <h3>Discover Unique Handmade Jewelry</h3>
-                <p><small>Beautifully crafted bracelets, necklaces, anklets, and waist beads.</small></p>
-                <a href="shop.html" class="btn shop-btn">Shop Now</a>
+                <h1>About Us</h1>
+                <p>At Handmade Jewelry, we believe in the power of individuality and self-expression. Every piece of jewelry tells a story — let us be part of yours.</p>
             </div>
-
-            <picture>
-                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
-                <img src="images/hero-small.webp" alt="Handmade Jewelry" width="250" height="250" loading="lazy">
-            </picture>
         </section>
 
-
-        <section>
-
-            <div class="category">
-                <picture>
-                    <source srcset="images/cat-bracelet-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/cat-bracelet-medium.webp" media="(min-width: 500px)">
-                    <img src="images/cat-bracelet-small.webp" alt="Bracelets" width="250" height="250" loading="lazy">
-                </picture>
-                <div>
-                    <h3>Bracelets</h3>
-                    <p><small>Elegant and unique bracelets designed with love.</small></p>
-                    <a href="shop.html#bracelets" class="btn details-btn">View More</a>
-                </div>
+        <section class="about-content">
+            <div class="story-section">
+                <h2>Our Story</h2>
+                <p>
+                    Handmade Jewelry began as a small passion project, inspired by the beauty of natural materials and the desire to create something truly meaningful. Over the years, we’ve grown into a trusted brand, known for our commitment to quality, sustainability, and artistry. Each piece is lovingly crafted by hand, ensuring that no two are ever exactly alike.
+                </p>
+                <img src="images/logo.svg" alt="Our Workshop" class="about-img" width="350">
             </div>
 
-
-            <div class="category">
-                <picture>
-                    <source srcset="images/cat-waist-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/cat-waist-medium.webp" media="(min-width: 500px)">
-                    <img src="images/cat-waist-small.webp" alt="Waist Beads" width="250" height="250" loading="lazy" />
-                </picture>
-                <div class="p-2">
-                    <h3>Waist Beads</h3>
-                    <p><small>Stylish waist beads to complement your beauty.</small></p>
-                    <a href="shop.html#waistbeads" class="btn details-btn">View More</a>
-                </div>
+            <div class="values-section">
+                <h2>What We Stand For</h2>
+                <ul>
+                    <li><strong>Craftsmanship:</strong> Every item is made with care, precision, and attention to detail.</li>
+                    <li><strong>Sustainability:</strong> We use eco-friendly materials and ethical practices to reduce our impact on the planet.</li>
+                    <li><strong>Community:</strong> Supporting local artisans and celebrating cultural heritage through our designs.</li>
+                </ul>
             </div>
 
-
-            <div class="category">
-                <picture>
-                    <source srcset="images/cat-anklet-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/cat-anklet-medium.webp" media="(min-width: 500px)">
-                    <img src="images/cat-anklet-small.webp" alt="Anklets" width="250" height="250" loading="lazy">
-                </picture>
-                <div>
-                    <h3>Anklets</h3>
-                    <p><small>Charming anklets for all occasions.</small></p>
-                    <a href="shop.html#anklets" class="btn details-btn">View More</a>
-                </div>
+            <div class="team-section">
+                <h2>Meet the Creator</h2>
+                <p>
+                    Daphne Avril, founder and lead designer, brings years of experience and a deep passion for creating unique jewelry. Inspired by nature, culture, and the stories of her clients, Daphne’s designs aim to celebrate individuality and connection.
+                </p>
+                <img src="images/pp.jpeg" alt="Daphne Avril" class="about-img" width="200">
             </div>
+        </section>
 
-
-            <div class="category">
-                <picture>
-                    <source srcset="images/cat-neck-large.webp" media="(min-width: 1000px)">
-                    <source srcset="images/cat-neck-medium.webp" media="(min-width: 500px)">
-                    <img src="images/cat-neck-small.webp" alt="Necklaces" width="250" height="250" loading="lazy">
-                </picture>
-                <div class="p-2">
-                    <h3>Necklaces</h3>
-                    <p><small>Handcrafted necklaces that tell a story.</small></p>
-                    <a href="shop.html#necklaces" class="btn details-btn">View More</a>
-                </div>
-            </div>
+        <section class="cta-section text-center">
+            <h2>Want to Learn More?</h2>
+            <p>Explore our collections and find the perfect piece to express your unique style.</p>
+            <a href="shop.html" class="btn shop-btn">Visit Our Shop</a>
         </section>
     </main>
 
-
     <footer class="text-white p-2">
-        <p>&copy; Copyright <span id="currentyear"></span></p>
+        <p>&copy; Copyright <span id="currentyear"></span> Handmade Jewelry. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>

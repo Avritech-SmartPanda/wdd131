@@ -109,6 +109,7 @@
      margin-top: 1rem;
      text-transform: uppercase;
      font-size: 12px;
+     background: #fff;
  }
 
  .details-btn {
@@ -171,6 +172,50 @@
  }
 
 
+
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+ }
+
+ form label {
+     font-weight: bold;
+ }
+
+ form input, form textarea, form button {
+     padding: 10px;
+     font-size: 1rem;
+     border: 1px solid #ddd;
+ }
+
+ form button {
+     background: #333;
+     color: #fff;
+     cursor: pointer;
+ }
+
+ #formFeedback {
+     display: none;
+ }
+
+ #formFeedback {
+     padding: 1rem;
+     margin-bottom: 1rem;
+     font-size: 0.875rem;
+     color: #166534;
+     background-color: #d0e0d6;
+     border-radius: 0.5rem;
+     border: 1px solid #166534;
+ }
+
+ .product-grid {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     gap: 1rem;
+     padding: 1rem;
+ }
+
  @media screen and (min-width: 768px) {
      #menu {
          display: none;
@@ -211,6 +256,29 @@
      .hero {
          display: flex;
          justify-content: space-between;
+     }
+
+     .product-grid {
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     .product-card {
+         background: #fff;
+         width: 250px;
+         border-radius: 4px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+     }
+
+     .product-card h3, .product-card p, .product-card button {
+         margin: 0 1rem;
+     }
+
+     .product-card p {
+         font-size: 12px;
+     }
+
+     .product-card button {
+         margin-bottom: 1rem;
      }
 
      section {
