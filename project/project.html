@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Jewelry</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Daphne Avril.">
+    <meta name="author" content="Daphne Avril">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Signika+Negative:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="Logo" width="200">
+        <nav class="px-3 py-2  navigation">
+            <ul class="flex flex-row gap-2 list-none">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu"></button>
+    </header>
+
+
+    <main class="p-12 gap-2">
+
+        <section class="hero">
+            <div class="hero-section text-center">
+                <h2>Discover Unique Handmade Jewelry</h2>
+                <p>Beautifully crafted bracelets, necklaces, anklets, and waist beads.</p>
+                <a href="shop.html" class="shop-btn">Shop Now</a>
+            </div>
+
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Handmade Jewelry" width="250" height="250" loading="lazy" class="rounded-md">
+            </picture>
+        </section>
+
+
+        <section class="product-showcase grid grid-cols-2 gap-4 my-4">
+
+            <div class="product-card">
+                <img src="images/bracelets.jpg" alt="Handmade Bracelet" class="product-image">
+                <h3>Bracelets</h3>
+                <p>Elegant and unique bracelets designed with love.</p>
+                <a href="shop.html#bracelets" class="details-btn">View More</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="images/waistbeads.jpg" alt="Waist Beads" class="product-image">
+                <h3>Waist Beads</h3>
+                <p>Stylish waist beads to complement your beauty.</p>
+                <a href="shop.html#waistbeads" class="details-btn">View More</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="images/anklets.jpg" alt="Anklet" class="product-image">
+                <h3>Anklets</h3>
+                <p>Charming anklets for all occasions.</p>
+                <a href="shop.html#anklets" class="details-btn">View More</a>
+            </div>
+
+
+            <div class="product-card">
+                <img src="images/necklaces.jpg" alt="Necklace" class="product-image">
+                <h3>Necklaces</h3>
+                <p>Handcrafted necklaces that tell a story.</p>
+                <a href="shop.html#necklaces" class="details-btn">View More</a>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="text-white p-2">
+        <p>&copy; <span id="currentyear"></span> 🌸 Daphne Avril 🌸 Johannesburg, South Africa</p>
+        <i class="last-modified">Last Modification: <span id="lastModified"></span></i>
+    </footer>
+</body>
+
+</html>
