@@ -6,22 +6,22 @@
  }
 
  .bg-dark {
-     background-color: var(--dark);
+     background: var(--dark);
      color: #fff;
  }
 
  .bg-cyan {
-     background-color: var(--cyan);
+     background: var(--cyan);
      color: #fff;
  }
 
  .bg-dark-cyan {
-     background-color: var(--dark-cyan);
+     background: var(--dark-cyan);
      color: #fff;
  }
 
  .bg-yellow {
-     background-color: var(--gold);
+     background: var(--gold);
      color: #fff;
  }
 
@@ -64,12 +64,12 @@
      left: 18%;
      width: 65%;
      height: 3px;
-     background-color: var(--gold);
+     background: var(--gold);
      border-radius: 2px;
  }
 
  header {
-     background-color: #fff;
+     background: #fff;
      display: flex;
      flex-direction: column;
      padding: 12px 34px;
@@ -118,7 +118,7 @@
  }
 
  .shop-btn {
-     background-color: var(--cyan);
+     background: var(--cyan);
      color: #000;
  }
 
@@ -171,8 +171,6 @@
      padding: 12px;
  }
 
-
-
  form {
      display: flex;
      flex-direction: column;
@@ -204,17 +202,74 @@
      margin-bottom: 1rem;
      font-size: 0.875rem;
      color: #166534;
-     background-color: #d0e0d6;
+     background: #d0e0d6;
      border-radius: 0.5rem;
      border: 1px solid #166534;
  }
 
+
+ .filter-section {
+     margin-bottom: 20px;
+ }
+
+
+ .filter-grid {
+     display: grid;
+     gap: 1.5rem;
+     grid-template-columns: repeat(5, 1fr);
+     width: 100%;
+     list-style: none;
+ }
+
+ .hidden-input {
+     display: none;
+ }
+
+ .filter-item {
+     display: inline-flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     padding: 1rem;
+     background: #ffffff;
+     border: 1px solid #e5e7eb;
+     border-radius: 0.5rem;
+     cursor: pointer;
+     color: var(--dark);
+     transition: all 0.2s ease-in-out;
+ }
+
+ .filter-item:hover {
+     border-color: var(--cyan);
+     background: rgb(11 187 182 / 8%);
+     color: var(--cyan);
+ }
+
+ .hidden-input:checked+.filter-item {
+     border-color: var(--gold);
+     background: var(--gold);
+     color: #fff
+ }
+
+ .filter-content {
+     display: block;
+ }
+
+ .filter-heading {
+    text-transform: uppercase;
+    font-size: 12px;
+ }
+
+ .filter-description {
+     font-size: 0.75rem;
+ }
  .product-grid {
      display: grid;
      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
      gap: 1rem;
      padding: 1rem;
  }
+
 
  @media screen and (min-width: 768px) {
      #menu {

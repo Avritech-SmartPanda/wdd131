@@ -39,85 +39,107 @@
 
         <section class="product-list">
             <h2 class="text-center">Our Products</h2>
-            <div class="product-grid">
 
-                <div class="product-card">
-                    <img src="images/product1.webp" alt="Elegant Bracelet" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Elegant Bracelet</h3>
-                    <p>A stunning bracelet with intricate designs, perfect for any occasion.</p>
-                    <p class="price">R25.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
+            <div class="filter-section">
+                <ul class="filter-grid">
+                    <li>
+                        <input type="radio" id="category-all" name="category" value="all" class="hidden-input"
+                            checked />
+                        <label for="category-all" class="filter-item">
+                            <div class="filter-content">
+                                <div class="filter-heading">All</div>
+                                <div class="filter-description">Show all products</div>
+                            </div>
+
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="category-bracelet" name="category" value="bracelet"
+                            class="hidden-input" />
+                        <label for="category-bracelet" class="filter-item">
+                            <div class="filter-content">
+                                <div class="filter-heading">Bracelets</div>
+                                <div class="filter-description">Stylish wrist accessories</div>
+                            </div>
+
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="category-necklace" name="category" value="necklace"
+                            class="hidden-input" />
+                        <label for="category-necklace" class="filter-item">
+                            <div class="filter-content">
+                                <div class="filter-heading">Necklaces</div>
+                                <div class="filter-description">Elegant neck accessories</div>
+                            </div>
+
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="category-anklet" name="category" value="anklet" class="hidden-input" />
+                        <label for="category-anklet" class="filter-item">
+                            <div class="filter-content">
+                                <div class="filter-heading">Anklets</div>
+                                <div class="filter-description">Stylish ankle accessories</div>
+                            </div>
+
+                        </label>
+
+                    </li>
+                    <li>
+                        <input type="radio" id="category-waistbeads" name="category" value="waistbeads"
+                            class="hidden-input" />
+                        <label for="category-waistbeads" class="filter-item">
+                            <div class="filter-content">
+                                <div class="filter-heading">Waist Beads</div>
+                                <div class="filter-description">Stylish waist accessories</div>
+                            </div>
+
+                        </label>
+                    </li>
 
 
-                <div class="product-card">
-                    <img src="images/product2.webp" alt="Gold Necklace" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Gold Necklace</h3>
-                    <p>A beautiful gold necklace with a timeless design.</p>
-                    <p class="price">R45.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
+                </ul>
+            </div>
 
 
-                <div class="product-card">
-                    <img src="images/product3.webp" alt="Charming Anklet" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Charming Anklet</h3>
-                    <p>Delicate anklet adorned with beautiful charms.</p>
-                    <p class="price">R18.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
-
-
-                <div class="product-card">
-                    <img src="images/product4.webp" alt="Waist Beads" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Waist Beads</h3>
-                    <p>Elegant waist beads designed to enhance your beauty.</p>
-                    <p class="price">R15.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
-
-
-                <div class="product-card">
-                    <img src="images/product5.webp" alt="Crystal Necklace" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Crystal Necklace</h3>
-                    <p>A striking necklace featuring a large crystal pendant.</p>
-                    <p class="price">R50.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
-
-
-                <div class="product-card">
-                    <img src="images/product6.webp" alt="Handmade Ring" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Handmade Ring</h3>
-                    <p>An intricate ring designed for elegance and style.</p>
-                    <p class="price">R22.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/product7.webp" alt="Silver Bracelet" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Silver Bracelet</h3>
-                    <p>A simple yet elegant silver bracelet that complements any outfit.</p>
-                    <p class="price">R30.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/product8.webp" alt="Pearl Necklace" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Pearl Necklace</h3>
-                    <p>A classic pearl necklace that exudes sophistication.</p>
-                    <p class="price">R40.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="images/product9.webp" alt="Beaded Anklet" class="product-image" loading="lazy" width="250" height="250">
-                    <h3>Beaded Anklet</h3>
-                    <p>A colorful beaded anklet that adds a touch of fun to your look.</p>
-                    <p class="price">R20.00</p>
-                    <button class="btn details-btn">Add to Cart</button>
+            <!-- 
+            <div class="filter-section">
+                <p>Filter by Category:</p>
+                <div class="category-filters">
+                    <label>
+                        <input type="radio" name="category" value="all" checked>
+                        All
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="bracelet">
+                        Bracelets
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="necklace">
+                        Necklaces
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="anklet">
+                        Anklets
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="waistbeads">
+                        Waist Beads
+                    </label>
                 </div>
             </div>
+ -->
+
+
+
+
+
+
+
+
+
+            <div class="product-grid" id="productGrid"></div>
         </section>
     </main>
     <footer class="text-white p-2">
