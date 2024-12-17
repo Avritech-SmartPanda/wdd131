@@ -4,7 +4,7 @@ function getDates() {
 
 
     let lastModified = document.lastModified;
-    if (lastModified != null) {
+    if (lastModified) {
         document.getElementById("lastModified").textContent = lastModified;
     }
 }

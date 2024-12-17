@@ -36,114 +36,14 @@
 
 
     <main class="p-12 gap-2">
-
         <section class="product-list">
-            <h2 class="text-center">Our Products</h2>
-
-            <div class="filter-section">
-                <ul class="filter-grid">
-                    <li>
-                        <input type="radio" id="category-all" name="category" value="all" class="hidden-input"
-                            checked />
-                        <label for="category-all" class="filter-item">
-                            <div class="filter-content">
-                                <div class="filter-heading">All</div>
-                                <div class="filter-description">Show all products</div>
-                            </div>
-
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="category-bracelet" name="category" value="bracelet"
-                            class="hidden-input" />
-                        <label for="category-bracelet" class="filter-item">
-                            <div class="filter-content">
-                                <div class="filter-heading">Bracelets</div>
-                                <div class="filter-description">Stylish wrist accessories</div>
-                            </div>
-
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="category-necklace" name="category" value="necklace"
-                            class="hidden-input" />
-                        <label for="category-necklace" class="filter-item">
-                            <div class="filter-content">
-                                <div class="filter-heading">Necklaces</div>
-                                <div class="filter-description">Elegant neck accessories</div>
-                            </div>
-
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="category-anklet" name="category" value="anklet" class="hidden-input" />
-                        <label for="category-anklet" class="filter-item">
-                            <div class="filter-content">
-                                <div class="filter-heading">Anklets</div>
-                                <div class="filter-description">Stylish ankle accessories</div>
-                            </div>
-
-                        </label>
-
-                    </li>
-                    <li>
-                        <input type="radio" id="category-waistbeads" name="category" value="waistbeads"
-                            class="hidden-input" />
-                        <label for="category-waistbeads" class="filter-item">
-                            <div class="filter-content">
-                                <div class="filter-heading">Waist Beads</div>
-                                <div class="filter-description">Stylish waist accessories</div>
-                            </div>
-
-                        </label>
-                    </li>
-
-
-                </ul>
-            </div>
-
-
-            <!-- 
-            <div class="filter-section">
-                <p>Filter by Category:</p>
-                <div class="category-filters">
-                    <label>
-                        <input type="radio" name="category" value="all" checked>
-                        All
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="bracelet">
-                        Bracelets
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="necklace">
-                        Necklaces
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="anklet">
-                        Anklets
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="waistbeads">
-                        Waist Beads
-                    </label>
-                </div>
-            </div>
- -->
-
-
-
-
-
-
-
-
-
+            <div class="filter-section" id="filter-section"></div> 
             <div class="product-grid" id="productGrid"></div>
         </section>
     </main>
     <footer class="text-white p-2">
-        <p>&copy; Copyright <span id="currentyear"></span> Handmade Jewelry. All rights reserved.</p>
+        <p>&copy; Copyright <span id="currentyear"></span> Handmade Jewelry. All rights reserved. </p>
+        <div id="lastModified"></div>
     </footer>
 </body>
 
